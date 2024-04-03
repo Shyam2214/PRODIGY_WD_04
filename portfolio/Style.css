@@ -1,0 +1,360 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Changed font-family to use Roboto */
+    background-color: hsl(249, 16%, 9%);
+    overflow: hidden;
+}
+
+.main-page{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: #14131a;
+    width: 17.7rem;
+}
+
+.page-info{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 17.7rem);
+}
+
+.contact{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #14131a;
+    width: 100%;
+    height: 5rem;
+    position: fixed; 
+}
+
+.content{
+    flex: 1;
+    margin-top: 5rem; 
+}
+
+
+.circles{
+    display: flex;
+    padding: 1.25rem;
+}
+
+.circle{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 10px;
+    background-color: #2bd576;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    opacity: .7;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+.nav{
+    background-color: #8a8b8a2b;
+    position: relative;
+    line-height: 1.75rem;
+    height: 85%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.nav-text{
+    color: white;
+    margin-left: 1.55rem;
+}
+
+.nav .home{
+    font-size: 14px;
+    padding: 16px;
+    cursor: pointer;
+    margin-left: 1.25rem;
+}
+
+.home a{
+    opacity: 1;
+}
+
+.nav .home:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+}
+
+.nav .social{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.25rem;
+}
+
+.nav .social a{
+    padding: 16px;
+    cursor: pointer;
+}
+
+.nav .social a:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+}
+
+
+.contact button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 2.5rem;
+    width: 8rem;
+    margin-left: 720px;
+    background-color: #2bd575c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact button img{
+    height: 20px;
+}
+
+.intro{
+    width: 100%;
+    position: relative;
+}
+
+.wallpaper{
+    position: relative;
+}
+
+.wallpaper img{
+    width: 100%;
+    height: 10rem;
+    /* opacity: .5; */
+}
+
+.my-img {
+    position: absolute; 
+    top: 5%;
+    left: 7%; 
+}
+
+.intro .my-img img{
+    height: 130px;
+    width: 130px;
+    border:  3px solid white;
+    border-radius:50%;
+}
+
+.name{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    color: white;
+    line-height: 2px;
+}
+
+.name .my-name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.gap{
+    margin-right: 10px;
+}
+
+/* @media (max-width: 1000px) {
+    .sidebar{
+        margin-left: -300px;
+    }
+} */
+
+.main-content{
+    overflow: auto;
+}
+
+h3{
+    color: white;
+    margin-left: 2rem;
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 500;;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-container{
+    display: flex;
+    color: white;
+    margin-left: 2.5rem;
+}
+
+.card{
+    background-color: #8a8b8a2b;
+    width: 12rem;
+    border-radius: .5rem;
+    padding: .8rem;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: .75rem;
+    opacity: .8;
+    line-height: 1.25rem;
+}
+
+.skills{
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.box-container{
+    display: flex;
+    color: white;
+    margin-left: 2.5rem;
+}
+
+.box{
+    background-color: #8a8b8a2b;
+    width: 10rem;
+    height: 12rem;
+    padding: .8rem;
+    margin-left: 12px;
+}
+
+.box-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: .2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    opacity: .9;
+    letter-spacing: .1rem;
+}
+
+.skill{
+    padding: .5rem;
+    background-color: hsl(249, 16%, 9%);
+    line-height: 3rem;
+    margin: .5rem;
+    font-size: small;
+    border: 2px solid hsl(249, 16%, 9%);
+    opacity: .7;
+    border-radius: .5rem;
+}
+
+.border-orange{
+    border-color: rgba(234, 179, 8, .6); ;
+}
+
+.border-red{
+    border-color: rgba(239, 68, 68, .6);
+}
+
+.border-blue{
+    border-color: rgba(59, 130, 246, .6)  ;
+}
+
+.footer{
+    height: 2rem;
+}
+
+.icon-color-L{
+    color: blue;
+    font-size: 20px;
+}
+
+.icon-color-G{
+    color: greenyellow;
+    font-size: 20px;
+}
+
+.icon-color-S{
+    color: orange;
+    font-size: 20px;
+}
+
+.icon-color-X{
+    color: grey;
+    font-size: 20px;
+}
+
+  
+.contact-form{
+    background-color: rgba(245, 222, 179, 0.895);
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 5px solid #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+  
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input[type="text"],
+input[type="email"] {
+    margin-bottom: 1.5rem;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+  
+textarea {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+  
+button[type="submit"] {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add some space above the button */
+}
+  
+button[type="submit"]:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+  
+input[type="file"] {
+    padding: 7px; /* Adjust padding to match your design */
+    border: 1px solid #ddd; /* Add a border to the file upload field */
+    border-radius: 3px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+  
